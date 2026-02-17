@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Bread Typing — Fastest "bread"</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <main>
+      <h1>Bread Typing</h1>
+
+      <div id="setupContainer">
+        <input type="text" id="username" placeholder="Enter your name">
+        <button id="startBtn">Start Game</button>
+      </div>
+
+      <div id="gameContainer" style="display:none;">
+        <h2>Type this word as fast as you can:</h2>
+        <h1 id="targetWord" class="target">bread</h1>
+        <input type="text" id="typingInput" placeholder="Type here...">
+        <p id="timer">Time: 0.000s</p>
+        <button id="submitBtn">Submit Score</button>
+      </div>
+
+      <div id="leaderboardContainer">
+        <h2>🏆 Leaderboard</h2>
+        <table id="leaderboard">
+          <thead>
+            <tr>
+              <th>Rank</th>
+              <th>Player</th>
+              <th>Time (seconds)</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+      <!-- toast notifications -->
+      <div id="toast" class="toast" aria-live="polite" style="display:none"></div>
+    </main>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/game.js"></script>
+  </body>
+</html>
