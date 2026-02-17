@@ -1,0 +1,10 @@
+# Render service manifest: forces Render to use Node environment
+services:
+  - type: web
+    name: bread
+    env: node
+    plan: free
+    buildCommand: ""
+    startCommand: "node server.js"
+    disk: 0
+    envVars: []
