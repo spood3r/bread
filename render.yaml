@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: bread
+    runtime: docker
+    plan: free
+    disk:
+      size: 1
+    envVars:
+      - key: NODE_ENV
+        value: production

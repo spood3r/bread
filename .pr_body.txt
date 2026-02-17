@@ -1,0 +1,15 @@
+Adds Socket.IO realtime leaderboard, per-user notifications when someone beats your personal best, and UI polish (toast, responsive).
+
+What changed:
+- Server: server.js attaches Socket.IO, broadcasts leaderboard updates, and notifies registered users when their personal best is beaten.
+- Client: public/game.js registers username for notifications, shows realtime leaderboard and toast alerts.
+- Frontend: HTML/CSS polish for leaderboard and responsive layout.
+
+How to test locally:
+1. npm install
+2. npm start
+3. Open http://localhost:3000 in two browsers, register different names, and race to type "bread".
+
+Notes:
+- Uses a local SQLite DB leaderboard.db created at runtime.
+- Some packages reported vulnerabilities from npm audit; consider auditing before production.

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+# Replace with your deployed sitemap URL if different:
+Sitemap: /sitemap.xml
