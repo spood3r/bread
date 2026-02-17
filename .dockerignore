@@ -1,4 +1,16 @@
 node_modules
+npm-debug.log
+.DS_Store
+.env
+.venv
+.git
+.gitignore
+.vscode
+coverage
+logs
+*.log
+dist
+buildnode_modules
 leaderboard.db
 npm-debug.log
 dist
