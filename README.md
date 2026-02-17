@@ -13,5 +13,8 @@ npm start
 Files:
 - [server.js](server.js) — backend API and static server
 - [public/index.html](public/index.html) — frontend game
+
+Credits:
+- Built with help from GitHub Copilot
 # bread
 fastest bread typing website

@@ -26,3 +26,6 @@ ol{padding-left:20px}
 	.target{font-size:22px}
 	.toast{left:12px;right:12px}
 }
+
+.site-footer{margin-top:18px;text-align:center;color:#666;font-size:13px}
+.site-footer a{color:var(--accent);text-decoration:none}
